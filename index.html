@@ -6,12 +6,15 @@
     <title>Tailwind day3</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
+  <link rel="stylesheet" href="style.css">
   <body
-    class="w-full max-w-screen h-lvh bg-gradient-to-br from-pink-400 via-blue-500 to-green-500"
+    class="w-full max-w-screen h-lvh bg-gradient-to-bl from-sky-400 via-orange-500 to-purple-500 overflow-hidden"
   >
-    <div class="flex justify-center w-full max-w-screen h-auto mt-3.5 sticky">
+  <div class="h-screen overflow-y-scroll">
+    <!-- nav bar -->
+    <div class="flex justify-center w-full max-w-screen h-auto mt-3.5 z-50 sticky top-3">
       <nav
-        class="navBar w-[90%] max-w-screen h-24 bg-white/30 backdrop-blur-2xl rounded-full flex justify-between p-6 drop-shadow-xl drop-shadow-white"
+        class="navBar w-[90%] max-w-screen h-24 bg-white/10 backdrop-blur-2xl rounded-full flex justify-between p-6 drop-shadow-xl drop-shadow-white"
       >
         <div class="logo flex gap-2">
           <img src="./tailwind-css-icon.svg" alt="" class="w-[40px]" />
@@ -71,17 +74,172 @@
         </div>
       </nav>
     </div>
+    <!-- products subheading -->
+    <div class="subHeading1 w-full h-auto flex justify-center mt-8">
+      <div class="w-[90%] h-auto  text-center">
+        <span class="text-4xl font-bold text-slate-950/60">Products</span>
+      </div>
+    </div>
+    <!-- Product container -->
+    <div class="w-full flex justify-center h-auto mt-2">
+      <div
+        class="products w-[90%] h-auto bg-white/10 flex justify-around flex-wrap py-12 rounded-3xl drop-shadow-xl drop-shadow-black">
+
+        <!-- Put yours products here -->
+         <!-- products1 -->
+         <div class="$$card bg-base-100 w-96 shadow-sm rounded-2xl bg-white hover:rotate-5 hover:ease-in-out duration-100 mb-5 mt-5">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+              class="rounded-t-2xl w-96 h-60" />
+          </figure>
+          <div class="$$card-body px-3 py-5">
+            <h2 class="$$card-title font-bold text-xl mb-2">Nike SuperRep Go 3 Flyknit</h2>
+            <p class="mb-2">The Nike SuperRep Go 3 Flyknit is a lightweight, breathable training shoe built for high-intensity workouts and agility.</p>
+            <div class="$$card-actions justify-end">
+              <button class="bg-indigo-800 text-white border border-indigo-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <span class="bg-indigo-400 shadow-indigo-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- products2 -->
+        <div class="$$card bg-base-100 w-96 shadow-sm rounded-2xl bg-white hover:rotate-5 hover:ease-in-out duration-100 mb-5 mt-5">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Shoes"
+              class="rounded-t-2xl w-96 h-60"
+               />
+          </figure>
+          <div class="$$card-body px-3 py-5">
+            <h2 class="$$card-title font-bold text-xl mb-2">New Balance 247</h2>
+            <p class="mb-2">New Balance 247 delivers sleek design,sporty vibes,all-day comfort, and sporty style for life on the move</p>
+            <div class="$$card-actions justify-end">
+              <button class="bg-indigo-800 text-white border border-indigo-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <span class="bg-indigo-400 shadow-indigo-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- products3 -->
+        <div class="$$card bg-base-100 w-96 shadow-sm rounded-2xl bg-white hover:rotate-5 hover:ease-in-out duration-100 mb-5 mt-5">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Shoes"
+              class="rounded-t-2xl w-96 h-60"
+               />
+          </figure>
+          <div class="$$card-body px-3 py-5">
+            <h2 class="$$card-title font-bold text-xl mb-2"> Nike Air Max</h2>
+            <p class="mb-2">Nike Air Max offers bold style, breathable comfort, and iconic Air cushioning for everyday performance.</p>
+            <div class="$$card-actions justify-end">
+              <button class="bg-indigo-800 text-white border border-indigo-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <span class="bg-indigo-400 shadow-indigo-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- product4 -->
+        <div class="$$card bg-base-100 w-96 shadow-sm rounded-2xl bg-white hover:rotate-5 hover:ease-in-out duration-100 mb-5 mt-5">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1719759674376-a001dc166cb6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Shoes"
+              class="rounded-t-2xl w-96 h-60"
+               />
+          </figure>
+          <div class="$$card-body px-3 py-5">
+            <h2 class="$$card-title font-bold text-xl mb-2"> Nike Air Max</h2>
+            <p class="mb-2">Nike Air Max offers bold style, breathable comfort, and iconic Air cushioning for everyday performance.</p>
+            <div class="$$card-actions justify-end">
+              <button class="bg-indigo-800 text-white border border-indigo-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <span class="bg-indigo-400 shadow-indigo-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- product5 -->
+        <div class="$$card bg-base-100 w-96 shadow-sm rounded-2xl bg-white hover:rotate-5 hover:ease-in-out duration-100 mb-5 mt-5">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1679152411070-3d72d90e64f1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Shoes"
+              class="rounded-t-2xl w-96 h-60"
+               />
+          </figure>
+          <div class="$$card-body px-3 py-5">
+            <h2 class="$$card-title font-bold text-xl mb-2"> Nike Air Max</h2>
+            <p class="mb-2">Nike Air Max offers bold style, breathable comfort, and iconic Air cushioning for everyday performance.</p>
+            <div class="$$card-actions justify-end">
+              <button class="bg-indigo-800 text-white border border-indigo-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <span class="bg-indigo-400 shadow-indigo-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- product6 -->
+        <div class="$$card bg-base-100 w-96 shadow-sm rounded-2xl bg-white hover:rotate-5 hover:ease-in-out duration-100 mb-5 mt-5">
+          <figure>
+            <img
+              src="https://media.gq-magazine.co.uk/photos/5d13a35b143ba7ea7364b3c4/16:9/w_2560%2Cc_limit/Nike-Mag-2016-Official-05_original-17oct16_pr_b.jpg"
+              alt="Shoes"
+              class="rounded-t-2xl w-96 h-60"
+               />
+          </figure>
+          <div class="$$card-body px-3 py-5">
+            <h2 class="$$card-title font-bold text-xl mb-2"> Nike Air Max</h2>
+            <p class="mb-2">Nike Air Max offers bold style, breathable comfort, and iconic Air cushioning for everyday performance.</p>
+            <div class="$$card-actions justify-end">
+              <button class="bg-indigo-800 text-white border border-indigo-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <span class="bg-indigo-400 shadow-indigo-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- product7 -->
+        <div class="$$card bg-base-100 w-96 shadow-sm rounded-2xl bg-white hover:rotate-5 hover:ease-in-out duration-100 mb-5 mt-5">
+          <figure>
+            <img
+              src="https://cdn.sanity.io/images/c1chvb1i/production/482c3f85116956573cb230d16a2f2e8c4905ba42-1100x735.jpg"
+              alt="Shoes"
+              class="rounded-t-2xl w-96 h-60"
+               />
+          </figure>
+          <div class="$$card-body px-3 py-5">
+            <h2 class="$$card-title font-bold text-xl mb-2"> Nike Air Max</h2>
+            <p class="mb-2">Nike Air Max offers bold style, breathable comfort, and iconic Air cushioning for everyday performance.</p>
+            <div class="$$card-actions justify-end">
+              <button class="bg-indigo-800 text-white border border-indigo-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <span class="bg-indigo-400 shadow-indigo-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- pricing subheading -->
     <div class="subHeading1 w-full h-auto flex justify-center mt-8">
       <div class="w-[90%] h-auto  text-center">
         <span class="text-4xl font-bold text-slate-950/60">Plans Pricing</span>
       </div>
     </div>
+    <!-- pricing container -->
     <div class="w-full flex justify-center h-auto mt-2">
       <div
-        class="products w-[90%] h-auto bg-white/30 flex justify-around flex-wrap py-12 rounded-3xl">
+        class="products w-[90%] h-auto bg-white/10 flex justify-around flex-wrap py-12 rounded-3xl drop-shadow-xl drop-shadow-black">
         <!-- put your cards here -->
          <!-- card1 --> 
-<div class="flex flex-col bg-white rounded-3xl">
+          <div class="flex flex-col bg-white rounded-3xl mt-5">
   <div class="px-6 py-8 sm:p-10 sm:pb-6">
     <div class="grid items-center justify-center w-full grid-cols-1 text-left">
       <div>
@@ -107,14 +265,13 @@
     <a
       aria-describedby="tier-company"
       class="flex items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
-      href="#"
     >
       Get started
     </a>
   </div>
-</div>
-<!-- card2 -->
-<div class="flex flex-col bg-white rounded-3xl">
+          </div>
+          <!-- card2 -->
+          <div class="flex flex-col bg-white rounded-3xl mt-5">
   <div class="px-6 py-8 sm:p-10 sm:pb-6">
     <div class="grid items-center justify-center w-full grid-cols-1 text-left">
       <div>
@@ -140,14 +297,13 @@
     <a
       aria-describedby="tier-company"
       class="flex items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
-      href="#"
     >
       Get started
     </a>
   </div>
-</div>
-<!-- card3 -->
-<div class="flex flex-col bg-white rounded-3xl">
+          </div>
+          <!-- card3 -->
+          <div class="flex flex-col bg-white rounded-3xl mt-5">
   <div class="px-6 py-8 sm:p-10 sm:pb-6">
     <div class="grid items-center justify-center w-full grid-cols-1 text-left">
       <div>
@@ -173,15 +329,15 @@
     <a
       aria-describedby="tier-company"
       class="flex items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
-      href="#"
     >
       Get started
     </a>
   </div>
-</div>
-<!-- End -->
+          </div>
+          <!-- End -->
         </div>
       </div>
     </div>
+  </div>
   </body>
 </html>
