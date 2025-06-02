@@ -26,22 +26,22 @@
           >
             <a
               href="#home"
-              class="bg-white/30 p-2 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-blue-500/60 hover:text-white hover:animate-bounce duration-700"
+              class="nav-links bg-white/30 p-2 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-blue-500/60 hover:text-white hover:animate-bounce duration-700"
               >Home</a
             >
             <a
-              href="#"
-              class="bg-white/30 p-2 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-blue-500/60 hover:text-white hover:animate-bounce duration-700"
+              href="#about"
+              class="nav-links bg-white/30 p-2 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-blue-500/60 hover:text-white hover:animate-bounce duration-700"
               >About</a
             >
             <a
-              href="#"
-              class="bg-white/30 p-2 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-blue-500/60 hover:text-white hover:animate-bounce duration-700"
+              href="#contact"
+              class="nav-links bg-white/30 p-2 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-blue-500/60 hover:text-white hover:animate-bounce duration-700"
               >Contact</a
             >
             <a
               href="#products"
-              class="bg-white/30 p-2 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-blue-500/60 hover:text-white hover:animate-bounce duration-700"
+              class="nav-links bg-white/30 p-2 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-blue-500/60 hover:text-white hover:animate-bounce duration-700"
               >Products</a
             >
           </div>
@@ -84,10 +84,12 @@
           ></video>
           <div class="w-full ml-8 -mt-50 max-lg:ml-3">
             <!-- adjust margin to move over video -->
-            <span class="text-6xl font-black text-white/80 drop-shadow-lg"
+            <span
+              class="text-6xl font-black text-white/80 drop-shadow-lg max-md:text-5xl"
               >Explore Our</span
             ><br /><br />
-            <span class="text-5xl font-black text-white/50 drop-shadow-lg"
+            <span
+              class="text-5xl font-black text-white/50 drop-shadow-lg max-md:text-5xl"
               >Collections</span
             >
             <!-- button -->
@@ -643,7 +645,11 @@
         </div>
       </div>
       <!-- Thanks heading-->
-      <div id="brands" class="w-full h-auto flex justify-center mt-25 mb-10">
+      <div
+        id="contact"
+        id="brands"
+        class="w-full h-auto flex justify-center mt-25 mb-10"
+      >
         <div class="w-[90%] h-auto text-center">
           <span
             class="text-5xl font-bold text-slate-950/60 bg-white/10 px-7 py-2 pb-4 rounded-full shadow-2xl"
@@ -658,7 +664,8 @@
         >
           <div class="card">
             <div
-              class="relative bg-black w-[300px] sm:w-[350px] group transition-all duration-700 aspect-video flex items-center justify-center"
+              id="cardBox"
+              class="relative bg-black w-[300px] sm:w-[350px] group open-card transition-all duration-700 aspect-video flex items-center justify-center"
             >
               <div
                 class="transition-all flex flex-col items-center py-5 justify-start duration-300 group-hover:duration-1000 bg-white w-full h-full absolute group-hover:-translate-y-16"
@@ -895,5 +902,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
